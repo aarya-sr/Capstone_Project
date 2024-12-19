@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 20px;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    /* width: 100vw; */
+
+}
+.port{
+    font-size: 42px;
+    font-weight: 600px;
+}
+    
+
+.link{
+    height: 32px;
+    
+    
+}
+#links{
+    padding-right: 40px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #28261B ;
+
+}
+
+#heading{
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 700;
+    text-align: center;
+    color: #28261B;
+    width: 100%
+}
+
+
+.img{
+    border: 1.5px solid #00000000;
+    border-radius: 28px;
+    width: 100%;
+    padding-bottom: 96px;
+}
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.project1{
+    width: 413px;
+    height: 275px;
+    border: 1.5px solid #00000000;
+    border-radius: 22px;
+    transition: 1s;
+
+}
+.project1:hover{
+    transform: scale(1.05);
+}
+
+h3,p{
+    margin-top: -5px;
+}
+h3{
+    font-weight:lighter ;
+    margin-top: 2px;
+}
+p{
+    color: #2E2A149E;
+    font-weight: 400;
+
+}
+#message{
+    background-color: white;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    /* align-items: center */
+
+}
+#msg{
+    color:#28261B;
+    font-weight: 400px;
+    line-height: 52px;
+    align-items: center;
+    font-size: 48px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    
+    /* max-width: 900px; */
+}
+
+@media screen  and (max-width:550px){
+    #heading{
+        font-size: 50px;
+    }
+    .project1{
+        size: 300px;
+    }
+    .img{
+        min-width: 400px ;
+
+    }
+    #msg{
+        font-size: 35px;
+    }
+
+    
+}
