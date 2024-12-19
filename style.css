@@ -1,19 +1,37 @@
-body{
-    margin: 0;
-    padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content-container{
+    padding-inline: 48px;
+}
+
+.hero{
+    display: flex;
+    padding-block: 96px;
+    flex-direction: column;
+    gap: 52px;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
     align-items: center;
     /* width: 100vw; */
+    padding-inline: 48px;
 
 }
 .port{
+    font-family: "Source Serif 4", serif;
     font-size: 42px;
     font-weight: 600px;
 }
@@ -21,7 +39,7 @@ body{
 
 .link{
     height: 32px;
-    
+    text-decoration: none;
     
 }
 #links{
@@ -29,7 +47,11 @@ body{
     font-size: 28px;
     font-weight: 400;
     color: #28261B ;
+    text-emphasis: none;
 
+}
+a{
+    text-decoration: none;
 }
 
 #heading{
@@ -38,7 +60,9 @@ body{
     font-weight: 700;
     text-align: center;
     color: #28261B;
-    width: 100%
+    width: 100%;
+    letter-spacing: -0.02em;
+    
 }
 
 
@@ -54,7 +78,13 @@ body{
     flex-wrap: wrap;
     padding: 20px;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    gap: 52px;
+}
+
+.projects-container div h3 {
+    font-weight: 400;
+    font-family: Public sans;
 }
 .project1{
     width: 413px;
@@ -62,7 +92,8 @@ body{
     border: 1.5px solid #00000000;
     border-radius: 22px;
     transition: 1s;
-
+    
+    
 }
 .project1:hover{
     transform: scale(1.05);
@@ -74,6 +105,9 @@ h3,p{
 h3{
     font-weight:lighter ;
     margin-top: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 p{
     color: #2E2A149E;
@@ -84,10 +118,17 @@ p{
     background-color: white;
     padding-top: 96px;
     padding-bottom: 96px;
-    /* align-items: center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-#msg{
+
+#msg {
+    width: 67%;
+}
+#msg p{
+    font-family: "Roboto Serif", serif;
     color:#28261B;
     font-weight: 400px;
     line-height: 52px;
@@ -96,8 +137,125 @@ p{
     justify-content: center;
     text-align: center;
     margin: auto;
+
+
     
     /* max-width: 900px; */
+}
+
+.nextmsg{
+padding-block: 52px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 52px;
+}
+.nextmsg .container1{
+    width: 50%;
+}
+.nextmsg .container2{
+    width: 50%;
+    font-family: Public Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    padding-block:96px;
+    gap: 48px;
+    align-items: center; 
+    margin-bottom:48px; 
+}
+
+h3{
+    font-family: "Roboto Serif", serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #28261B;
+}
+
+.input-container{
+    display: flex;
+    width: 600px;
+    gap: 12px;
+
+}
+input{
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 22px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto Serif", serif;
+    background-color: #7E702517;
+    border: none;
+    opacity: 40%;
+}
+
+button{
+    background-color: #FFD700;
+    padding: 12px 24px;
+    border-radius: 22px;
+    color: black;
+    font-family: "Roboto Serif", serif;
+    font-size: 20px;
+    font-weight: 200;
+    border: none;
+}
+
+button h4{
+    font-family: "Roboto Serif", serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.socials{
+    display: flex;
+    gap:32px;
+}
+
+.socials img{
+    width: 48px;
+}
+
+footer{
+    padding-top: 96px;
+    padding-bottom: 32px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container h2{
+    font-family: "Roboto Serif", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #2E2A149E;
+
+}
+
+footer .container .btn{
+    border: 1px solid #000000;
+    padding: 14px 32px;
+    border-radius: 22px;
+    transition: .5s;
+}
+
+footer .container .btn h6{
+    /* font-family: "Roboto Mono", monospace; */
+    font-size: 20px;
+    font-weight: 400;
+    color: #28261B;
 }
 
 @media screen  and (max-width:550px){
@@ -113,6 +271,23 @@ p{
     }
     #msg{
         font-size: 35px;
+    }
+    
+    .container1 {
+        width: 646px;
+    }
+    .container2 {
+        width: 646px;
+        /* font-family: Public Sans; */
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.005em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+       
     }
 
     
